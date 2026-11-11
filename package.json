@@ -1,0 +1,30 @@
+{
+  "name": "life-changer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amankumartiwari545/life-changer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/amankumartiwari545/life-changer/issues"
+  },
+  "homepage": "https://github.com/amankumartiwari545/life-changer#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1165.0",
+    "@aws-sdk/s3-request-presigner": "^3.1165.0",
+    "@supabase/supabase-js": "^2.119.0",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "multer": "^2.0.2"
+  }
+}

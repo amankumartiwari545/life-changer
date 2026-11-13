@@ -75,7 +75,7 @@ router.get('/', async (req, res) => {
   try {
     const { data: posts, error } = await supabase
       .from('posts')
-      .select('id,user_id,caption,category,media_url,audio_url,likes_count,saves_count,created_at,profiles(*)')
+      .select('id,user_id,caption,category,media_url,audio_url,likes_count,saves_count,created_at,profiles!posts_user_id_fkey(id,username,avatar_url)')
       .not('media_url', 'is', null)
       .limit(200);
 
